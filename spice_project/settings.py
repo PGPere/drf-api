@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-g+ybf3e+hnl37a&8&r!bv8i4b08v9b8)vny3b+43^a*-f&u!eg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1']
 
 
 # Application definition
@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'spice'
+    'spice',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -50,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'spice_app.urls'
+ROOT_URLCONF = 'spice_project.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'spice_app.wsgi.application'
+WSGI_APPLICATION = 'spice_project.wsgi.application'
 
 
 # Database
